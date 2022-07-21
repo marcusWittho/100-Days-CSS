@@ -51,7 +51,7 @@
 
 .num_0_1, .num_0_2 {
   background-color: transparent;
-  border: 2.1vh solid aliceblue;
+  border: 19px solid aliceblue;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 48px;
@@ -71,11 +71,12 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: aliceblue;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 4.2rem;
+  font-size: 62px;
   font-weight: 800;
+  left: 130px;
   position: absolute;
   text-transform: uppercase;
-  top: 46%;
+  top: 215px;
   z-index: 8;
 }
 
@@ -83,7 +84,10 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: aliceblue;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1.3rem;
+  font-size: 18px;
   font-weight: 800;
+  left: 135px;
   text-transform: uppercase;
+  position: absolute;
+  top: 274px;
 }
