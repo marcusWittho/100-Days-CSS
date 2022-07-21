@@ -1,0 +1,100 @@
+.frame {
+	background: gray;
+	border-radius: 4px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+	height: 400px;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	position: absolute;
+	top: 50%;
+	width: 400px;
+}
+
+.center {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: space-evenly;
+  position: relative;
+  width: 90px;
+}
+
+.line {
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  height: 12px;
+  width: 90px;
+}
+
+.line:nth-child(1).active {
+  animation: animationLine-1 700ms cubic-bezier(.62, .87, .63, 1) forwards;
+}
+
+.line:nth-child(2).active {
+  animation: animationLine-2 700ms cubic-bezier(.62, .87, .63, 1) forwards;
+}
+.line:nth-child(3).active {
+  animation: animationLine-3 700ms cubic-bezier(.62, .87, .63, 1) forwards;
+}
+
+.line:nth-child(1).disabled {
+  animation: animationRevLine-1 700ms cubic-bezier(.62, .87, .63, 1) forwards;
+}
+
+.line:nth-child(2).disabled {
+  animation: animationRevLine-2 700ms cubic-bezier(.62, .87, .63, 1) forwards;
+}
+
+.line:nth-child(3).disabled {
+  animation: animationRevLine-3 700ms cubic-bezier(.62, .87, .63, 1) forwards;
+}
+
+@keyframes animationLine-1 {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0px, 26px, 0px); }
+  100% { transform: translate3d(0px, 26px, 0px) rotateZ(45deg); }
+}
+
+@keyframes animationLine-2 {
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+
+@keyframes animationLine-3 {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0px, -26px, 0px); }
+  100% { transform: translate3d(0px, -26px, 0px) rotate(135deg); }
+}
+
+@keyframes animationRevLine-1 {
+  0% { transform: translate3d(0px, 26px, 0px) rotateZ(45deg); }
+  50% { transform: translate3d(0px, 26px, 0px); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes animationRevLine-2 {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes animationRevLine-3 {
+  0% { transform: translate3d(0px, -26px, 0px) rotate(135deg); }
+  50% { transform: translate3d(0px, -26px, 0px); }
+  100% { transform: translate3d(0, 0, 0); }
+}
