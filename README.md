@@ -3,4 +3,4 @@
 ## Dia 001:
   - Construir um número com background gradiente
 
-![Day_001](https://user-images.githubusercontent.com/66654653/180116918-964ff977-1a8f-4694-8893-cc2bbe0b721c.png)
+![Day_001](https://user-images.githubusercontent.com/66654653/180125753-379c3496-b9d7-4f02-8719-da484d782e3b.png)
