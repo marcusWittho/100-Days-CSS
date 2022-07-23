@@ -14,3 +14,8 @@
   - Sombra animada (essa foi difícil)
 
 ![Day_003](https://user-images.githubusercontent.com/66654653/180620477-407dc19c-657b-4652-96f0-db169363bf20.gif)
+
+## Dia 004:
+  - Animação de loading
+
+![Day_004](https://user-images.githubusercontent.com/66654653/180626540-a31b07c0-124d-4666-b908-56bee2f01a33.gif)
