@@ -19,3 +19,8 @@
   - Animação de loading
 
 ![Day_004](https://user-images.githubusercontent.com/66654653/180626540-a31b07c0-124d-4666-b908-56bee2f01a33.gif)
+
+## Dia 005:
+  - Gráfico bonitinho (svg é legal)
+
+![graphic](https://user-images.githubusercontent.com/66654653/183231217-3aab0091-a76a-4e02-a2d6-d5c8fe4fdad6.gif)

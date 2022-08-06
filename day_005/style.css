@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #66c6bf;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 75%;
+}
+
+.header {
+  background-color: #f2c783;
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title type"
+    "date value";
+  height: 62px;
+  position: absolute;
+  width: 302px;
+}
+
+.title {
+  align-self: flex-end;
+  display: flex;
+  font-weight: 600;
+  grid-area: title;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.type {
+  align-self: flex-end;
+  display: flex;
+  font-size: 0.8rem;
+  grid-area: type;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.date {
+  font-size: 0.9rem;
+  grid-area: date;
+  margin-left: 10px;
+}
+
+.value {
+  display: flex;
+  font-weight: 600;
+  justify-content: flex-end;
+  margin-right: 15px;
+  grid-area: value;
+}
+
+.parameter {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  position: absolute;
+  top: 72px;
+  width: 130px;
+}
+
+.parameter span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.6rem;
+  position: relative;
+}
+
+.parameter span:before {
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: -18px;
+  position: absolute;
+  top: 4px;
+  width: 13px;
+}
+
+.red:before {
+  background-color: red;
+}
+
+.blue:before {
+  background-color: blue;
+}
+
+.graphic {
+  align-self: center;
+  align-items: center;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  justify-content: space-around;
+  position: absolute;
+  width: 278px;
+}
+
+.graphic span {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 1px;
+  width: 265px;
+}
+
+.redDots, .blueDots {
+  align-self: center;
+  bottom: 40px;
+  display: flex;
+  font-weight: 600;
+  height: 100px;
+  position: absolute;
+  width: 282px;
+}
+
+.redDots div {
+  background-color: red;
+}
+
+.red-1 {
+  left: 14px;
+  position: absolute;
+  top: 53px;
+}
+
+.red-2 {
+  left: 56px;
+  position: absolute;
+  top: 15px;
+}
+
+.red-3 {
+  left: 99px;
+  position: absolute;
+  top: 28px;
+}
+
+.red-4 {
+  left: 143px;
+  position: absolute;
+  top: 13px;
+}
+
+.red-5 {
+  left: 182px;
+  position: absolute;
+  top: 48px;
+}
+
+.red-6 {
+  left: 222px;
+  position: absolute;
+  top: 58px;
+}
+
+.red-7 {
+  left: 266px;
+  position: absolute;
+  top: 20px;
+}
+
+.values {
+  border-radius: 3px;
+  bottom: 12px;
+  color: whitesmoke;
+  font-size: 0.7rem;
+  left: 50%;
+  opacity: 0;
+  padding: 4px 5px;
+  position: absolute;
+  transform: translate3d(-50%, 10px, 0);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  visibility: hidden;
+}
+
+.values:before {
+  content: "";
+  border: 6px solid transparent;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -6px;
+  position: absolute;
+}
+
+.redDots div .values:before {
+  border-top-color: red;
+}
+
+svg {
+  position: absolute;
+  bottom: -20px;
+  left: 16px;
+}
+
+polyline {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.red-lines {
+  stroke: red;
+}
+
+.blue-lines {
+  stroke: blue;
+}
+
+.blueDots div .values:before {
+  border-top-color: blue;
+}
+
+[class^="red-"], [class^="blue-"] {
+  border-radius: 3px;
+  cursor: pointer;
+  height: 6px;
+  position: absolute;
+  width: 6px;
+  z-index: 10;
+}
+
+[class^="red-"]:hover .values, [class^="blue-"]:hover .values {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.blueDots div {
+  background-color: blue;
+}
+
+.blue-1 {
+  left: 14px;
+  position: absolute;
+  top: 67px;
+}
+
+.blue-2 {
+  left: 56px;
+  position: absolute;
+  top: 57px;
+}
+
+.blue-3 {
+  left: 99px;
+  position: absolute;
+  top: 76px;
+}
+
+.blue-4 {
+  left: 143px;
+  position: absolute;
+  top: 62px;
+}
+
+.blue-5 {
+  left: 182px;
+  position: absolute;
+  top: 72px;
+}
+
+.blue-6 {
+  left: 222px;
+  position: absolute;
+  top: 88px;
+}
+
+.blue-7 {
+  left: 266px;
+  position: absolute;
+  top: 78px;
+}
+
+.weekdays {
+  align-self: center;
+  bottom: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-size: 0.6rem;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.weekdays span + span {
+  margin-left: 22px;
+}
