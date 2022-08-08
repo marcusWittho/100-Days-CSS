@@ -24,3 +24,8 @@
   - Gráfico bonitinho (svg é legal)
 
 ![graphic](https://user-images.githubusercontent.com/66654653/183231217-3aab0091-a76a-4e02-a2d6-d5c8fe4fdad6.gif)
+
+## Dia 006:
+  - Perfil de mídia social
+
+![profile](https://user-images.githubusercontent.com/66654653/183318484-fd8593b9-fbd2-4eb6-bf5c-2aa56ad54f90.gif)
