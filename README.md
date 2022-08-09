@@ -29,3 +29,8 @@
   - Perfil de mídia social
 
 ![profile](https://user-images.githubusercontent.com/66654653/183318484-fd8593b9-fbd2-4eb6-bf5c-2aa56ad54f90.gif)
+
+## Dia 007:
+  - Janela com barra de pesquisa e menu lateral
+
+![serachAndMenu](https://user-images.githubusercontent.com/66654653/183744306-84089000-0d07-4a27-b126-cdf77ef04680.gif)
